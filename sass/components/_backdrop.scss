@@ -1,0 +1,229 @@
+.backdrop {
+    position: fixed;
+
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms;
+
+}
+
+.backdrop__modal {
+    padding: 40px 40px;
+    position: absolute;
+
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    width: 528px;
+    height: 581px;
+
+    background-color: var(--color-section);
+}
+
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+}
+
+.backdrop__modal-button {
+    position: absolute;
+    padding: 6px 6px;
+    right: 8px;
+    top: 8px;
+
+
+    width: 30px;
+    height: 30px;
+
+    transition: var(--transition-translate);
+    transition-timing-function: var(--transition-cobic-bezier);
+    background-color: var(--color-section);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.backdrop__modal-button:hover,
+.backdrop__modal-button:focus {
+    fill: var(--color-brand);
+}
+
+.backdrop__form-label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: var(--color-text-grey);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.backdrop__modal-title {
+    margin-bottom: 12px;
+
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.backdrop__form-control {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.backdrop__form-input {
+
+
+    width: 100%;
+    padding: 10px 11px 10px 41px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    color: var(--color-text-grey);
+    outline: none;
+
+}
+
+
+.backdrop__form-input:focus {
+    border-color: var(--color-brand);
+    transition: var(--transition-header);
+    transition-timing-function: var(--transition-cubic-bezier);
+}
+
+.backdrop__form-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+
+
+}
+
+.backdrop__form-input:focus+.backdrop__form-icon {
+    fill: var(--color-brand);
+}
+
+.backdrop__form-textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    resize: none;
+    transition: var(--transition-header);
+    transition-timing-function: var(--transition-cubic-bezier);
+
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    outline: none;
+
+}
+
+.backdrop__form-textarea:focus {
+    border-color: var(--color-brand);
+}
+
+.backdrop__terms-checkbox {
+
+    color: var(--color-text-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.backdrop__checkbox-link {
+    color: var(--color-brand);
+}
+
+.backdrop__checkbox-input {
+    appearance: none;
+}
+
+.backdrop__checkbox-label {
+    margin-left: 12px;
+    padding-left: 23px;
+    position: relative;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.backdrop__checkbox-label::before {
+    position: absolute;
+    z-index: 1;
+    width: 16px;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    content: "";
+
+    background: var(--color-brand);
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.backdrop__checkbox-label::after {
+
+    position: absolute;
+    z-index: 2;
+    width: 11px;
+    height: 8px;
+    left: 3px;
+    top: 4px;
+
+    content: "";
+
+    background-image: url(../images/check-mark-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+
+}
+
+.backdrop__checkbox-icon {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    opacity: 1;
+}
+
+.backdrop__checkbox-icon:hover {
+    opacity: 0;
+}
+
+.backdrop__checkbox-input:checked+.backdrop__checkbox-label::after {
+    opacity: 1;
+}
+
+.backdrop__checkbox-input:checked+.backdrop__checkbox-label::before {
+    opacity: 1;
+}
+
+.hero__button--stiles {
+    margin-top: 30px;
+}
