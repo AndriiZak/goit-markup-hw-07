@@ -413,48 +413,47 @@
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
-    <div class="backdrop__modal">
-      <button type="button" class="backdrop__modal-button" data-modal-close>
+    <div class="modal">
+      <button type="button" class="modal__button" data-modal-close>
         <svg width="18px" height="18px">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
-      <p class="backdrop__modal-title">Залиште свої дані, ми вам передзвонимо</p>
-      <form action="backdrop__contact-form">
-        <label class="backdrop__form-label" for="person-name">Ім'я</label>
-        <div class="backdrop__form-control">
-          <input class="backdrop__form-input" id="person-name" type="text" name="person-name">
-          <svg class="backdrop__form-icon" width="18px" height="18px">
+      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+      <form>
+        <label class="form__label" for="person-name">Ім'я</label>
+        <div class="form__control">
+          <input class="form__input" id="person-name" type="text" name="person-name">
+          <svg class="form__icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-person-black"></use>
           </svg>
         </div>
 
-        <label class="backdrop__form-label" for="person-phone">Телефон</label>
-        <div class="backdrop__form-control">
-          <input class="backdrop__form-input" id="person-phone" type="tel" name="person-phone">
-          <svg class="backdrop__form-icon" width="18px" height="18px">
+        <label class="form__label" for="person-phone">Телефон</label>
+        <div class="form__control">
+          <input class="form__input" id="person-phone" type="tel" name="person-phone">
+          <svg class="form__icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-phone-black"></use>
           </svg>
         </div>
 
-        <label class="backdrop__form-label" for="person-mail">Пошта</label>
-        <div class="backdrop__form-control">
-          <input class="backdrop__form-input" id="person-mail" type="email" name="person-mail">
-          <svg class="backdrop__form-icon" width="18px" height="18px">
+        <label class="form__label" for="person-mail">Пошта</label>
+        <div class="form__control">
+          <input class="form__input" id="person-mail" type="email" name="person-mail">
+          <svg class="form__icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-email-black"></use>
           </svg>
         </div>
 
-        <label class="backdrop__form-label" for="person-coment">Коментар</label>
-        <textarea class="backdrop__form-textarea" id="person-textarea " name="person-coment"
+        <label class="form__label" for="person-coment">Коментар</label>
+        <textarea class="form__textarea" id="person-textarea " name="person-coment"
           placeholder="Введіть текст"></textarea>
 
-        <input class="backdrop__checkbox-input visually-hidden" id="terms-checkbox" type="checkbox"
-          name="terms-checkbox">
-        <label class="backdrop__checkbox-label" for="terms-checkbox">
-          <svg class="backdrop__checkbox-icon" width="16px" height="15px">
+        <input class="checkbox__input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
+        <label class="checkbox__label" for="terms-checkbox">
+          <svg class="checkbox__icon" width="16px" height="15px">
             <use href="./images/icons.svg#icon-square"></use>
-          </svg> Погоджуюся з розсилкою та приймаю <a class="backdrop__checkbox-link" href="#">Умови
+          </svg> Погоджуюся з розсилкою та приймаю <a class="checkbox__link" href="#">Умови
             договору</a>
         </label>
 
